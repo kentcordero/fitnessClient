@@ -1,0 +1,35 @@
+#root {
+    background-image: url('./images/bg-2.jpg');
+    height: 100vh;
+}
+
+.navbar.bg-primary {
+    background-color: #615AA2 !important;
+
+    a {
+        color: #E2EBE3 !important;
+    }
+}
+
+.btn-primary {
+    background-color: #8E80C4 !important;
+}
+
+.btn-danger {
+    background-color: #353536 !important;
+}
+
+.bg-purple {
+    background-color: #615AA2 !important;
+    color: #E2EBE3 !important;
+}
+
+.bg-lavander {
+    background-color: #8E80C4 !important;
+    color: #E2EBE3 !important;
+}
+
+.bg-midnight {
+    background-color: #353536 !important;
+    color: #E2EBE3 !important;
+}
