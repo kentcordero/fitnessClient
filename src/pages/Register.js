@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import UserContext from '../UserContext';
 
@@ -16,6 +16,7 @@ export default function Register() {
 	const [email,setEmail] = useState("");
 	const [password,setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
+    const navigate = useNavigate();
 
     const [isActive, setIsActive] = useState(false);
     
@@ -57,7 +58,8 @@ export default function Register() {
                     icon: "success",
                     text: "Thank you for registering!"
                 });
-
+                
+                navigate('/login');
             } 
 
 		})
