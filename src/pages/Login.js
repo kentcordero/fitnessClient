@@ -13,8 +13,8 @@ export default function Login() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
     const [isActive, setIsActive] = useState(true);
+    const navigate = useNavigate();
     
     function authenticate(e) {
 
@@ -47,7 +47,7 @@ export default function Login() {
                 setEmail('');
                 setPassword('');
 
-                <Navigate to="/" />
+                navigate('/');
             })
 
         }
